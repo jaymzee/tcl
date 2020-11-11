@@ -3,12 +3,12 @@
 # This program draws an image
 # on the canvas widget.
 #
-# Author: Jan Bodnar
-# Website: www.zetcode.com
+# if you get can't find package Img
+# sudo apt install libtk-img
 
 package require Img
 
-image create photo img -file "tatras.jpg"
+image create photo img -file lena.jpg
 set height [image height img]
 set width [image width img]
 
@@ -17,5 +17,5 @@ canvas .can -height $height -width $width
 .can create image 0 0 -anchor nw -image img
 pack .can
 
-wm title . "High Tatras" 
+wm title . Lena
 wm geometry . +300+300

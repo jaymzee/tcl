@@ -7,7 +7,8 @@
 # Website: www.zetcode.com
 
 
-canvas .can
+canvas .can -width 390 -height 240
+
 .can create text 10 30 -anchor w -font Purisa \
     -text "Most relationships seem so transitory"
 .can create text 10 60 -anchor w -font Purisa \
@@ -23,4 +24,4 @@ canvas .can
 pack .can
 
 wm title . "lyrics"
-wm geometry . 430x250+300+300
+wm geometry . 400x250+300+300
