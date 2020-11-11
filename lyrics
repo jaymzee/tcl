@@ -7,21 +7,21 @@
 # Website: www.zetcode.com
 
 
-canvas .can -width 390 -height 240
+canvas .can -width 400 -height 240
 
-.can create text 10 30 -anchor w -font Purisa \
+.can create text 200 30 -font Purisa \
     -text "Most relationships seem so transitory"
-.can create text 10 60 -anchor w -font Purisa \
+.can create text 200 60 -font Purisa \
     -text "They're good but not the permanent one"
-.can create text 10 110 -anchor w -font Purisa \
+.can create text 200 110 -font Purisa \
     -text "Who doesn't long for someone to hold"
-.can create text 10 140 -anchor w -font Purisa \
+.can create text 200 140 -font Purisa \
     -text "Who knows how to love without being told"
-.can create text 10 170 -anchor w -font Purisa \
+.can create text 200 170 -font Purisa \
     -text "Somebody tell me why I'm on my own"
-.can create text 10 200 -anchor w -font Purisa \
+.can create text 200 200 -font Purisa \
      -text "If there's a soulmate for everyone"
 pack .can
 
 wm title . "lyrics"
-wm geometry . 400x250+300+300
+wm geometry . 400x240+300+300
