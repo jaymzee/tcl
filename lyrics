@@ -1,27 +1,19 @@
 #!/usr/bin/wish
 
-# In this script, we draw text
-# on the window.
-#
-# Author: Jan Bodnar
-# Website: www.zetcode.com
-
+# In this script, we draw text on a window
 
 canvas .can -width 400 -height 240
 
 .can create text 200 30 -font Purisa \
-    -text "Most relationships seem so transitory"
+    -text "I am the key to the lock in your house"
 .can create text 200 60 -font Purisa \
-    -text "They're good but not the permanent one"
-.can create text 200 110 -font Purisa \
-    -text "Who doesn't long for someone to hold"
-.can create text 200 140 -font Purisa \
-    -text "Who knows how to love without being told"
-.can create text 200 170 -font Purisa \
-    -text "Somebody tell me why I'm on my own"
-.can create text 200 200 -font Purisa \
-     -text "If there's a soulmate for everyone"
+    -text "That keeps your toys in the basement."
+.can create text 200 90 -font Purisa \
+    -text "And if you get too far inside"
+.can create text 200 120 -font Purisa \
+    -text "You'll only see my reflection."
+
 pack .can
 
-wm title . "lyrics"
-wm geometry . 400x240+300+300
+wm title . "Climbing Up The Walls"
+wm geometry . 400x150+300+300
