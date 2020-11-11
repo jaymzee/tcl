@@ -7,12 +7,12 @@
 # Website: www.zetcode.com
 
 canvas .can
-.can create oval 10 10 80 80 -outline #777 -fill #777
-.can create oval 110 10 210 80 -outline #777 -fill #777
-.can create rect 230 10 290 60 -outline #777 -fill #777
+.can create oval 10 10 80 80 -outline #ff0 -fill #0f0
+.can create oval 110 10 210 80 -outline #f00 -fill #f80
+.can create rect 230 10 290 60 -outline #0ff -fill #00f
 .can create arc 30 200 90 100 -start 0 -extent 210 -outline #777 -fill #777
 
-set points  [ list 150 100 200 120 240 180 210 200 150 150 100 200 ]
+set points [list 150 100 200 120 240 180 210 200 150 150 100 200]
 .can create polygon $points -outline #777 -fill #777
 pack .can
 

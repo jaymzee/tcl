@@ -1,0 +1,24 @@
+#!/usr/bin/wish
+
+# This program draws an image
+# on the canvas widget.
+#
+
+package require Img
+
+set filename lena.jpg
+
+image create photo img -file $filename
+set height [image height img]
+set width [image width img]
+
+canvas .can -height $height -width $width
+.can create image 0 0 -anchor nw -image img
+.can create text 20 20 -anchor nw -fill #fff -font mono \
+    -text "filename:   $filename"
+.can create text 20 40 -anchor nw -fill #fff -font mono \
+    -text "dimensions: ${width}x${height}"
+pack .can
+
+wm title . Lena
+wm geometry . +300+300
