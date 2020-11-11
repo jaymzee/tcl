@@ -10,7 +10,8 @@ package require Img
 
 if { $argc != 1 } {
     # $argv0 is the full path so it's not like C argv[0] :/
-    puts "Usage: tclshow image"
+    puts "imshow displays an image in a window\n"
+    puts "Usage:\ttclshow image"
     exit
 }
 
