@@ -11,7 +11,7 @@ package require Img
 if { $argc != 1 } {
     # $argv0 is the full path so it's not like C argv[0] :/
     puts "imshow displays an image in a window\n"
-    puts "Usage:\ttclshow image"
+    puts "Usage:\timshow image"
     exit
 }
 
@@ -29,5 +29,5 @@ canvas .can -height $height -width $width
     -text "dimensions: ${width}x${height}"
 pack .can
 
-wm title . tclshow
+wm title . imshow
 wm geometry . +300+300
