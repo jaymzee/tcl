@@ -25,6 +25,7 @@ if { $argc > 1 && [lindex $argv 0] == "-o" } {
 image create photo img -file $filename
 set height [image height img]
 set width [image width img]
+wm title . $filename
 
 canvas .can -height $height -width $width
 .can create image 0 0 -anchor nw -image img
@@ -34,8 +35,8 @@ if { $show_overlay == 1 } {
         -text "filename:   $filename"
     .can create text 20 40 -anchor nw -fill #fff -font mono \
         -text "dimensions: ${width}x${height}"
+    wm title . imshow
 }
 pack .can
 
-wm title . imshow
 wm geometry . +300+300
